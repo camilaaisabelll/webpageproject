@@ -1,0 +1,46 @@
+<!doctype html>
+<!-- story.html                               Camila Torreblanca-->
+<!-- Web page that generates a story time based on user inputs. -->
+<!-- ========================================================== -->
+
+<html>
+ <head>
+   <title> Camila's Story Time Generator </title>
+ </head>
+
+ <body>
+   <h2>Story Time Generator</h2>
+   <p>
+     Enter an adjective to describe the weather: 
+       <input type="text" id="adjectiveBox" size=20 value="Warm"> <br>
+     Enter a person's name: 
+       <input type="text" id="nameBox" size=20 value="Bobby"> <br>
+     Enter the color of the sky: 
+       <input type="text" id="colorBox" size=20 value="blue"> <br>
+     Enter the person's mood: 
+       <input type="text" id="moodBox" size=20 value="happy"> <br>
+     Enter a city:
+       <input type="text" id="cityBox" size=20 value="Costa Mesa"> <br>
+     Enter a food:
+       <input type="text" id="foodBox" size=20 value="mangos"> <br>
+   </p>
+     <input type="button" value="Click for Story Time"
+            onclick="document.getElementById('outputDiv').innerHTML=
+                       '<p>Hello ' + document.getElementById('adjectiveBox').value + 
+                       ',</p> <p>It was a ' +
+                       document.getElementById('nameBox').value +
+                       ' and sunny day and ' +
+                       document.getElementById('colorBox').value + 
+                       '  <br> decided to go for a walk under the ' + 
+                       document.getElementById('moodBox').value + 
+                       '  <br> sky. Bobby was feeling ' + 
+                       document.getElementById('cityBox').value +   
+                       ' about moving to his new city ' + 
+                       document.getElementById('foodBox').value +
+                       '. He was also eating some +              
+                       document.getElementById('dateBox').value + '.</p>' +
+                       '<p style=\'text-align:left\'>The End </p>';">
+   <hr>
+   <div id="outputDiv"></div>
+ </body>
+</html>
